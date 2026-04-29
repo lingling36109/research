@@ -25,14 +25,14 @@ all: $(TARGET) $(UTILS)
 $(TARGET): $(OBJS)
 	$(NVCC) $(CFLAGS) $(NVFLAGS) $(INCLUDES) -o $@ $^
 
-$(BINDIR)/%.o: ../src | $(BINDIR)
+$(BINDIR)/%.o: src/%.cu | $(BINDIR)
 	$(NVCC) $(CFLAGS) $(NVFLAGS) $(INCLUDES) -c $< -o $@
 
-$(BINDIR)/%.o: ../src | $(BINDIR)
+$(BINDIR)/%.o: src/%.cpp | $(BINDIR)
 	$(CXX) $(CFLAGS) $(NVFLAGS) $(INCLUDES) -c $< -o $@
 
-convert: ../utils
-	$(CXX) $(CFLAGS) -o $@ $^
+convert: utils/convert.cpp
+	$(CXX) $(CFLAGS) -o $@ $<
 
 $(BINDIR):
 	mkdir -p $(BINDIR)
