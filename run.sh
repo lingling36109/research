@@ -11,7 +11,7 @@ set -euo pipefail
 module load cudatoolkit gcc
 
 MATRICES=(144 road_usa cant belgium_osm)
-MAT_DIR="${PSCRATCH}/matrices"
+MAT_DIR="$(pwd)/matrices"
 mkdir -p results
 
 for m in "${MATRICES[@]}"; do
