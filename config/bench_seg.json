@@ -1,0 +1,22 @@
+{
+    "warmup_iters": 3,
+    "bench_iters": 10,
+    "track_stage_time": true,
+    "output_stats": true,
+    "stats_output_file": "stats.json",
+    "print_info": true,
+    "print_memory": false,
+
+    "use_estimation_workflow": true,
+    "use_ultrasparse_workflow": true,
+    "use_assist_information": true,
+    "use_hybrid_accumulator": true,
+    "use_indirect_sort": true,
+    "use_fat_workflow": true,
+
+    "use_segmented_workflow": true,
+    "segmentation_grid_max": 256,
+    "segmentation_hot_threshold_k": 2.0,
+    "segmentation_min_segment_rows": 1024,
+    "segmentation_cc_max_iters": 32
+}
