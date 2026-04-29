@@ -1,0 +1,9 @@
+../bin/
+spgemm
+*.nsys-rep
+*.qdstrm
+test_bin/
+*.log
+*.ncu-rep
+temp.json
+convert

@@ -1,0 +1,30 @@
+{
+    "track_stage_time": true,
+    "check_correctness": false,
+    "output_stats": true,
+    "compare_relative_error": 1e-6,
+    "compare_autofail_relative_error": 1e-4,
+    "ground_truth_file": "",
+    "stats_output_file": "stats.json",
+
+    "warmup_iters": 1,
+    "bench_iters": 1,
+    "print_info": true,
+    "print_memory": false,
+
+    "use_estimation_workflow": true,
+    "use_ultrasparse_workflow": true,
+    "use_assist_information": true,
+    "use_hybrid_accumulator": true,
+    "use_indirect_sort": true,
+    "use_fat_workflow": true,
+    "hll_numeric_malloc_expansion_coe": 1.3,
+    "estimation_input_expansion_threshold": 8,
+    "estimation_output_compaction_threshold": 8,
+
+    "use_segmented_workflow": false,
+    "segmentation_grid_max": 256,
+    "segmentation_hot_threshold_k": 2.0,
+    "segmentation_min_segment_rows": 1024,
+    "segmentation_cc_max_iters": 32
+}

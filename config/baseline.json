@@ -1,0 +1,16 @@
+{
+    "track_stage_time": false,
+    "check_correctness": false,
+    "compare_relative_error": 1e-6,
+    "compare_autofail_relative_error": 1e-4,
+    "ground_truth_file": "ground_truth.json",
+    "warmup_iters": 10,
+    "bench_iters": 10,
+    "print_info": false,
+    "print_memory": false,
+    "use_estimation_workflow": false,
+    "use_ultrasparse_workflow": false,
+    "use_assist_information": false,
+    "use_hybrid_accumulator": false,
+    "use_indirect_sort": false
+}

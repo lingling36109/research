@@ -1,0 +1,13 @@
+{
+    "track_stage_time": true,
+    "check_correctness": false,
+    "compare_relative_error": 1e-6,
+    "compare_autofail_relative_error": 1e-4,
+    "ground_truth_file": "",
+    "warmup_iters": 10,
+    "bench_iters": 10,
+    "print_info": true,
+    "print_memory": false,
+    "output_stats": true,
+    "stats_output_file": "stats.json"
+}
